@@ -70,6 +70,7 @@ var bibtexify = (function($) {
         // adds links to the PDF or url of the item
         links: function(entryData) {
             var itemStr = '';
+            z = entryData;
             if (entryData.file && entryData.file.match(/.*\.pdf/)) {
                 itemStr += ' (<a title="PDF-version of this article" href="' +
                             entryData.file + '">pdf<\/a>)';
